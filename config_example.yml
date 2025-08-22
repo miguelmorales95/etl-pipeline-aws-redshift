@@ -1,0 +1,14 @@
+# Example configuration file for ETL pipeline
+
+aws:
+  region: us-west-2
+  s3_bucket: your-s3-bucket
+  iam_role: arn:aws:iam::123456789012:role/RedshiftCopyUnload
+
+redshift:
+  host: your-redshift-cluster.xxxxxx.us-west-2.redshift.amazonaws.com
+  port: 5439
+  database: dev
+  user: awsuser
+  password: SuperSecret
+  schema: public
